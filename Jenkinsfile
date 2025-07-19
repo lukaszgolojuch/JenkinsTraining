@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo 'Tutaj byłby checkout kodu z Git'
+                git url: 'https://github.com/lukaszgolojuch/PlaywrightTests', branch: 'main'
             }
         }
 
