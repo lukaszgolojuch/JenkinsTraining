@@ -16,7 +16,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Uruchamiam testy (tu byłyby testy JUnit, Playwright itd.)'
+                echo 'Uruchamiam testy'
+                sh './gradlew clean test'
             }
         }
 
